@@ -1,7 +1,7 @@
 name: 'Deploy SER script: `email_summary.R`'
 'on':
   schedule:
-    - cron:  '30 4 * * *'
+    - cron:  '44 4 * * *'
 
 jobs:
   build:
