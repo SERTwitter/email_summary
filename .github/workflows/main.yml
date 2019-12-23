@@ -1,7 +1,5 @@
-name: 'Deploy SER script: `test_email_summary.R`'
+name: 'Deploy SER script: `email_summary.R`'
 'on':
-  push:
-    branch: master
   schedule:
     - cron:  '30 4 * * *'
 
@@ -24,5 +22,5 @@ jobs:
           SER_CONSUMER_KEY: ${{ secrets.SER_CONSUMER_KEY }}
           SER_CONSUMER_SECRET: ${{ secrets.SER_CONSUMER_SECRET }}
         run: |-
-          Rscript -e "library(ser); source_ser('test_email_summary')"
+          Rscript -e "library(ser); source_ser('email_summary')"
     container: rocker/verse:latest
