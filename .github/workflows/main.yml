@@ -1,4 +1,4 @@
-name: 'Deploy SER script: `email_summary.R`'
+name: 'Deploy SER script: `test_email_summary.R`'
 'on':
   push:
     branch: master
